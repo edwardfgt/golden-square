@@ -1,6 +1,6 @@
 require "check_codeword"
 
-RSpec.describe"check_codeword method" do
+RSpec.describe "check_codeword method" do
   it "Rejects a user if password is wrong" do
     result = check_codeword("ADWDA")
     expect(result).to eq "WRONG!"
