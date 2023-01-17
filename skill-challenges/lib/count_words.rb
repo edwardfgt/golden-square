@@ -1,3 +1,3 @@
 def count_words(string)
-  return 0
+  return string.split(" ").count
 end
