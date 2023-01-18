@@ -29,5 +29,4 @@ RSpec.describe "make_snippet method" do
     end
   end
 
-
 end
