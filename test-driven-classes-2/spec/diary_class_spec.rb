@@ -1,4 +1,4 @@
-require 'test_driven_class_ex1'
+require 'diary_class'
 
 RSpec.describe DiaryEntry do
 
