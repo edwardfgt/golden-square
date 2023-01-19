@@ -46,26 +46,15 @@ class DiaryEntry
     
     start = @last_word_read
     finish = @last_word_read + readable_words
-    # puts "Start: #{start} Finish: #{finish}"
+ 
 
     if readable_words == 0 || words.length == 0
       return 0
     end
 
-    #puts "words = #{words}"
-    #puts "start = #{start}"
-    #puts "finish = #{finish}"
     readable_chunk = words[start,readable_words]
     @last_word_read = finish
     readable_chunk.join(' ')
 
-
-    # puts "Updated Finish: #{@last_word_read}"
-    
   end
 end
-
-# diary = DiaryEntry.new("", "1 2 3 4 5 6 7 8 9 10 11") 
-# puts diary.reading_chunk(1,2)
-# puts diary.reading_chunk(1,2)
-# puts diary.reading_chunk(1,2)
