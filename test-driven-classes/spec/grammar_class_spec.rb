@@ -47,7 +47,6 @@ describe GrammarStats do
       grammar.check("Hi everyone!")
       grammar.check("Bye.")
       expect(grammar.percentage_good).to eq "75% of checks have passed so far"
-
     end
   end
 end
