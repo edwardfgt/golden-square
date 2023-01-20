@@ -15,12 +15,4 @@ class DiaryEntry
   def count_words
      return @contents.split.size
   end
-
-  def reading_time(wpm)
-    #
-  end
-
-  def reading_chunk(wpm, minutes)
-    #
-  end
 end

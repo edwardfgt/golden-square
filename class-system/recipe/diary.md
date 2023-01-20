@@ -24,12 +24,6 @@
 
 ## 2. Design the Class System
 
-
-```
-
-
-```
-
 _Also design the interface of each class in more detail._
 
 ```ruby
