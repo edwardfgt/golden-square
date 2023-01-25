@@ -20,8 +20,4 @@ describe Menu do
       expect(menu.return).to eq [dish1,dish2,dish3]
     end
   end
-
-
-
-  end
 end

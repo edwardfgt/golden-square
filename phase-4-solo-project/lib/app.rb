@@ -1,4 +1,5 @@
 require "menu"
+require "dish"
 
 class App
   def initialize(menu)
@@ -11,7 +12,13 @@ class App
   end
   
   def add_cart(dish)
-  #takes dish as input, adds to cart hash
+    @cart << @menu.add_to_cart(dish)
+
+    #add match to cart
+  end
+
+  def view_cart
+    return @cart
   end
   
   def check_out
