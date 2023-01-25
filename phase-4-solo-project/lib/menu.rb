@@ -7,7 +7,8 @@ class Menu
     return @menu
   end
   
-  def add_food(dish) #add a new instance of a Dish object to @menu
+  def add_food(dish)
+    @menu << dish #add a new instance of a Dish object to @menu
   end
   
   def del_food(dish) #remove an instance of Dish object from @menu
