@@ -1,14 +1,13 @@
 class Dish
-  def initialize(item, cost) #item is a string, cost is an integer
-    @item = item
-    @cost = cost
+  def initialize(item, cost)
+    @attributes = {:item => item, :cost => cost}
   end
 
   def item
-    return @item
+    return @attributes[:item]
   end
   
   def cost 
-    return @cost
+    return @attributes[:cost]
   end
 end

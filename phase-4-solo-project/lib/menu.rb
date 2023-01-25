@@ -4,7 +4,9 @@ class Menu
   end
 
   def return #returns the menu
-    return @menu
+    output = []
+    @menu.each { |menu| output << "#{menu.item}: #{menu.cost}"}
+    return output
   end
   
   def add_food(dish)

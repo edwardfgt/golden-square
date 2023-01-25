@@ -3,10 +3,11 @@ require "menu"
 class App
   def initialize(menu)
     @menu = menu
+    @cart = []
   end
   
   def view_menu
-    return @menu
+    return @menu.return
   end
   
   def add_cart(dish)
