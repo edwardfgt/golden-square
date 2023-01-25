@@ -13,8 +13,6 @@ class App
   
   def add_cart(dish)
     @cart << @menu.add_to_cart(dish)
-
-    #add match to cart
   end
 
   def view_cart

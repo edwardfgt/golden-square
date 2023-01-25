@@ -31,6 +31,18 @@ describe "app menu integration test" do
       app.add_cart("salami")
       expect(app.view_cart).to eq [{:cost=>10, :item=>"salami"}]
     end
+
+    it "adds multiple items to cart" do
+      menu = Menu.new
+      app = App.new(menu)
+      dish1 = Dish.new("salami", 10)
+      dish2 = Dish.new("olives", 15)
+      menu.add_food(dish1)
+      menu.add_food(dish2)
+      app.add_cart("salami")
+      app.add_cart("olives")
+      expect(app.view_cart).to eq [{:cost=>10, :item=>"salami"}, {:cost=>15, :item=>"olives"}]
+    end
   end
 
   
