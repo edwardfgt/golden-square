@@ -18,9 +18,6 @@ class Menu
   end
 
 
-
-
-
   def add_food(dish)
     @menu << dish #add a new instance of a Dish object to @menu
   end

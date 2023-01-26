@@ -45,6 +45,16 @@ describe "app menu integration test" do
     end
   end
 
+  it "returns itemised receipt when user checks out" do
+    menu = Menu.new
+    app = App.new(menu)
+    dish1 = Dish.new("salami", 10)
+    dish2 = Dish.new("olives", 15)
+    menu.add_food(dish1)
+    menu.add_food(dish2)
+    app.add_cart("salami")
+    app.add_cart("olives")
+    expect(app.check_out).to eq ("1x salami £10\n1x olives £15\nTotal: £25")
   
   end
 end
